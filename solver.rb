@@ -1,15 +1,16 @@
 class Solver
   def factorial(num)
     fact = 1
-      return 1 if num.zero?
-      raise 'No negative factorial' if num.negative?
-      if num.positive?
-        i = 1
-        while i <= num
-          fact *= i
-          i += 1
-        end
+    return 1 if num.zero?
+    raise 'No negative factorial' if num.negative?
+
+    if num.positive?
+      i = 1
+      while i <= num
+        fact *= i
+        i += 1
       end
+    end
     fact
   end
 
@@ -29,6 +30,3 @@ class Solver
     end
   end
 end
-
-obj = Solver.new
-p obj.factorial(5)
