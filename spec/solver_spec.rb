@@ -12,11 +12,11 @@ describe Solver do
     expect(solver.reverse('hello')).to eq('olleh')
   end
 
-  it "returns fizz, buzz, or fizzbuzz" do
+  it 'returns fizz, buzz, or fizzbuzz' do
     solver = Solver.new
-    expect(solver.fizzbuzz(6)).to eq("fizz")
-    expect(solver.fizzbuzz(10)).to eq("buzz")
-    expect(solver.fizzbuzz(30)).to eq("fizzbuzz")
-    expect(solver.fizzbuzz(7)).to eq("7")
+    expect(solver.fizzbuzz(6)).to eq('fizz')
+    expect(solver.fizzbuzz(10)).to eq('buzz')
+    expect(solver.fizzbuzz(30)).to eq('fizzbuzz')
+    expect(solver.fizzbuzz(7)).to eq('7')
   end
 end
